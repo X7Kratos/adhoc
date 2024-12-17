@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Railways Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .background-image {
+            background-image: url('/image/train.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-600 p-5 background-image">
+    <div class="flex justify-between">
+        <!-- Left Side: Header and Main Content -->
+        <div class="w-2/3">
+            <!-- Header Section -->
+            <div class="flex items-center justify-between p-4">
+                <!-- Left Logo -->
+                <div class="flex items-center space-x-2">
+                    <img src="/image/railway-logo.png" alt="IRCTC logo" class="h-14 w-14">
+                    <div class="text-white">
+                        <h1 class="text-2xl font-bold text-black">INDIAN RAILWAYS</h1>
+                        <p class="text-sm text-black font-semibold">RAILWAY SEVA GRIEVANCE PORTAL</p>
+                    </div>
+                </div>
+
+                <!-- Right Icons with Labels -->
+                <div class="flex space-x-8 text-white ml-10">
+                    <div class="flex flex-col items-center">
+                        <img src="/image/call.png" alt="Call" class="h-10 w-10">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="/Image/admin.png" alt="Admin Log In" class="h-10 w-16">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="/Image/status.png" alt="Status" class="h-10 w-10">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="/Image/language.png" alt="Languages" class="h-8 w-8">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="/Image/enq.png" alt="Others Enquiry" class="h-10 w-20">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="pt-2 ml-10 text-3xl flex flex-col justify-between">
+                 <h1 class="text-slate-900 font-bold">
+                     Welcome to Indian Railways
+                 </h1>
+                <h1 class="text-black font-semibold text-sm ml-4">
+                    For Inquiry, Assistance & Grievance Redressal
+                </h1>
+                <!-- Images placed below the text -->
+                <div class="flex space-x-4 mt-4">
+                    <img src="/image/uts-ticket.png" alt="UTS Ticket" class="h-16">
+                    <img src="/image/irfc.png" alt="IRFC" class="h-16">
+                    <img src="/image/irctc.png" alt="IRCTC" class="h-16">
+                    <img src="/image/rs-enq.png" alt="Railway Inquiry" class="h-16">
+                    <img src="/image/room-booking.png" alt="Room Booking" class="h-16">
+                </div>
+            </div>
+
+            <!-- Placeholder Section for Future Component -->
+            <div class="flex items-center border-2 border-gray-300 p-6 bg-white max-w-lg rounded-3xl mt-96">
+                <div class="w-32 flex-shrink-0">
+                    <img src="image/azadi-logo.png" alt="Azadi Ka Amrit Mahotsav Logo">
+                </div>
+                <div class="ml-4">
+                    <h2 class="text-2xl font-bold text-gray-800">India's First Engine-less, Semi High-speed Train 'Vande Bharat Express...'</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Chatbox Section -->
+        <div class="w-1/3 mt-10 flex flex-col items-end mt- mr-12 ">
+            <!-- Placeholder for Future Component -->
+            <div class="bg-white shadow-lg rounded-xl p-6 mt-10 mx-auto max-w-xl px-16">
+                <h2 class="text-center text-2xl font-bold mb-6">Any Problem Let Us Know!</h2>
+                
+                <div class="flex justify-around items-center">
+                  <!-- Ticket Related -->
+                  <div class="flex flex-col items-center space-y-2">
+                    <div class="w-16 h-16 flex items-center justify-center">
+                      <!-- Placeholder for Ticket Related Image -->
+                      <img src="/image/ticket-icon.png" alt="Ticket Related" class="w-10 h-10">
+                    </div>
+                  </div>
+              
+                  <!-- Food Related -->
+                  <div class="flex flex-col items-center space-y-2">
+                    <div class=" w-16 h-16 flex items-center justify-center">
+                      <!-- Placeholder for Food Related Image -->
+                      <img src="/image/food-icon.png" alt="Food Related" class="w-10 h-10">
+                    </div>
+                  </div>
+              
+                  <!-- Health Issue -->
+                  <div class="flex flex-col items-center space-y-2">
+                    <div class=" w-16 h-16 flex items-center justify-center">
+                      <!-- Placeholder for Health Issue Image -->
+                      <img src="/image/health-icon.png" alt="Health Issue" class="w-10 h-10">
+                    </div>
+                  </div>
+              
+                  <!-- File TDR -->
+                  <div class="flex flex-col items-center space-y-2">
+                    <div class=" w-16 h-16 flex items-center justify-center">
+                      <!-- Placeholder for File TDR Image -->
+                      <img src="/image/tdr-icon.png" alt="File TDR" class="w-10 h-10">
+                    </div>
+                  </div>
+              
+                  <!-- Help me Improve -->
+                  <div class="flex flex-col items-center space-y-2">
+                    <div class=" w-16 h-16 flex items-center justify-center">
+                      <!-- Placeholder for Help Me Improve Image -->
+                      <img src="/image/health-icon.png" alt="Help Me Improve" class="w-10 h-10">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+            
+            <section class="w-full max-w-[500px] p-3">
+                <div class="bg-white rounded-xl shadow-lg w-full overflow-hidden">
+                    <!-- Chat Header -->
+                    <div class="bg-blue-600 p-2">
+                        <div class="flex items-start">
+                            <img src="/image/chat-logo.png" alt="RailSeva Logo" class="w-12 h-12 rounded-full mr-3">
+                            <div class="text-white">
+                                <h3 class=" text-xl">Ask RailSeva</h3>
+                                <span class="text-sm">For Inquiry, Assistance & Grievance Redressal</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Chat Messages -->
+                    <div class="p-2 min-h-[150px]">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-4">
+                                <img src="/image/chat-logo.png" alt="RailSeva Logo" class="w-10 h-10 rounded-full mr-2">
+                                <div class="flex flex-col">
+                                    <span class="font-bold text-lg">RailSeva</span>
+                                    <span class="text-sm text-gray-500">Online</span>
+                                </div>
+                            </div>
+                            <div class="max-w-xs bg-[#E1ECF7] rounded-lg p-4 text-gray-800 mb-4">
+                                <p class="text-base font-bold">Hello! I'm here to help you. Can you please provide some details about the issue you're facing?</p>
+                            </div>
+                            <div class="max-w-xs w-full bg-blue-400 rounded-lg p-3 ml-auto mt-2 py-10"></div>
+                        </div>
+                    </div>
+                    <!-- Chat Input -->
+                    <div class="border-t border-gray-300 bg-[#F9F9F9] p-4">
+                        <div class="flex flex-wrap lg:flex-nowrap gap-2 justify-between mb-3">
+                            <button class="h-8 bg-white border border-blue-600 text-blue-600 rounded-full px-2 py-1 text-xs md:text-sm lg:text-sm hover:bg-blue-600 hover:text-white transition whitespace-nowrap">Unclean Facilities</button>
+                            <button class="h-8 bg-white border border-blue-600 text-blue-600 rounded-full px-2 py-1 text-xs md:text-sm lg:text-sm hover:bg-blue-600 hover:text-white transition whitespace-nowrap">Bad Ordor</button>
+                            <button class="h-8 bg-white border border-blue-600 text-blue-600 rounded-full px-2 py-1 text-xs md:text-sm lg:text-sm hover:bg-blue-600 hover:text-white transition whitespace-nowrap">Medical Emergency</button>
+                            <button class="h-8 bg-white border border-blue-600 text-blue-600 rounded-full px-2 py-1 text-xs md:text-sm lg:text-sm hover:bg-blue-600 hover:text-white transition whitespace-nowrap">Urgent</button>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center bg-gray-300 px-4 py-2 rounded-full space-x-2">
+                        <!-- Attachment Icon -->
+                        <button>
+                            <img src="image/file.png" alt="File" class="w-5 h-5" />
+                        </button>
+                      
+                        <!-- Input Field -->
+                        <input type="text" placeholder="Type here..." class="flex-grow bg-transparent border-none focus:outline-none text-black"/>
+                      
+                        <!-- Camera Icon -->
+                        <button>
+                            <img src="image/cam.png" alt="Camera" class="w-5 h-5" />
+                        </button>
+                        <!-- Mic Icon -->
+                        <button class="bg-blue-500 p-2 rounded-full">
+                            <img src="/image/mic.png" alt="Mic" class="w-5 h-5" />
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+     <div class="flex flex-col items-end text-black font-bold mr-32">
+        For Human Asistance Call Here - 123456     
+    </div>
+</body>
+</html>

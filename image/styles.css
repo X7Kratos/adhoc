@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #F4F4F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.chat-box {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  overflow: hidden;
+}
+
+.chat-header {
+  background-color: #007BFF;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: left;
+}
+
+.chat-header .chat-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.header-text {
+  color: white;
+}
+
+.chat-header h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.chat-header span {
+  font-size: 0.9em;
+}
+
+.chat-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chat-header h3 {
+  margin-bottom: 5px;
+}
+
+.chat-header span {
+  font-size: 0.9em;
+}
+
+.chat-messages {
+  padding: 15px;
+  min-height: 150px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+.sender-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sender-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.sender-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.status {
+  font-size: 12px;
+  color: #555;
+}
+
+.bot-message {
+  width: 270px;
+  height: 80px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #E1ECF7;
+  border-radius: 10px;
+  padding: 15px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blue-box {
+  width: 270px;
+  height: 80px;
+  background-color: #add8e6;
+  border-radius: 12px;
+  margin-left: 200px;
+}
+
+.bot-message p {
+  margin: 0;
+}
+
+.chat-input {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #F9F9F9;
+}
+
+.suggestions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.suggestions button {
+  height: 35px;
+  width: 115px;
+  background-color: white;
+  border: 1px solid #007BFF;
+  color: #007BFF;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.button {
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.suggestions button:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.send-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background-color: #0056b3;
+}

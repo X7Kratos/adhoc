@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Railways Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .background-image {
+            background-image: url('/image/train.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+        }
+        .blend-image {
+            mix-blend-mode: multiply;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-600 background-image">
+    <div class="relative">
+        <!-- Blue image at the top -->
+        <img src="image/blue.png" alt="blue" class="w-full h-24 object-cover">
+
+        <!-- White image slightly overlaid on the blue image with blending effect -->
+        <img src="image/whi.png" alt="white" class="absolute top-100 left-100 h-24 w-24 object-cover blend-image">
+
+        <!-- Logo and text overlayed on the images -->
+        <div class="absolute top-0 left-0 p-4 z-100">
+            <div class="flex items-center space-x-2">
+                <img src="/image/railway-logo.png" alt="IRCTC logo" class="h-14 w-14">
+                <div class="text-black">
+                    <h1 class="text-2xl font-bold">INDIAN RAILWAYS</h1>
+                    <p class="text-sm font-semibold">RAILWAY SEVA GRIEVANCE PORTAL</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            
+        </div>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div class="flex">
+        <!-- Sidebar -->
+        <div class="w-1/4 bg-white h-screen p-4">
+            <!-- Sidebar items (7 items) -->
+            <ul class="space-y-4">
+                <li>
+                    <a href="#" class="block p-2 bg-gray-200 hover:bg-gray-300 rounded flex items-center rounded-full space-x-2">
+                        <img src="/image/home.png" alt="Icon 1" class="h-6 w-6">
+                        <span class="font-bold">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-2 bg-gray-200 hover:bg-gray-300 rounded flex items-center rounded-full space-x-2">
+                        <img src="/image/user.png" alt="Icon 2" class="h-6 w-6">
+                        <span class="font-bold">User Management</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-2 bg-gray-200 hover:bg-gray-300 rounded flex items-center rounded-full space-x-2">
+                        <img src="/image/report.png" alt="Icon 3" class="h-6 w-6">
+                        <span class="font-bold">Analytics & Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-2 bg-gray-200 hover:bg-gray-300 rounded flex items-center space-x-2 rounded-full">
+                        <img src="/image/searchh.png" alt="Icon 4" class="h-6 w-6">
+                        <span class="font-bold">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-2 bg-gray-200 hover:bg-gray-300 rounded flex items-center rounded-full space-x-2">
+                        <img src="/image/hlp.png" alt="Icon 5" class="h-6 w-6">
+                        <span class="font-bold">Help & Support</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-2 bg-gray-200 hover:bg-gray-300 rounded flex items-center rounded-full space-x-2">
+                        <img src="/image/settings.png" alt="Icon 6" class="h-6 w-6">
+                        <span class="font-bold">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-2 bg-gray-200 hover:bg-gray-300 rounded flex items-center rounded-full space-x-2">
+                        <img src="/image/logout.png" alt="Icon 7" class="h-6 w-6">
+                        <span class="font-bold">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main content area -->
+         <div class="p-4">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center justify-center">
+                <img src="/image/tot.png" alt="Total Complaints" class="w-8 h-8 mb-2">
+                <div class="text-2xl font-bold">50209</div>
+                <div class="text-sm text-gray-600 text-center">Total Complaints</div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center justify-center">
+                <img src="/image/due.png" alt="Due Complaints" class="w-8 h-8 mb-2">
+                <div class="text-2xl font-bold">79</div>
+                <div class="text-sm text-gray-600 text-center">Due Complaints</div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center justify-center">
+                <img src="/image/resol.png" alt="Resolved Complaints" class="w-8 h-8 mb-2">
+                <div class="text-2xl font-bold">49700</div>
+                <div class="text-sm text-gray-600 text-center">Resolved Complaints</div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center justify-center">
+                <img src="/image/feedback.png" alt="Feedback Analysis" class="w-8 h-8 mb-2">
+                <div class="text-2xl font-bold">Feedback</div>
+                <div class="text-sm text-gray-600 text-center">Analysis</div>
+            </div>
+        </div>
+        <div class="pt-20">
+            <form class="max-w-6xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="p-3 flex justify-between items-center bg-gray-200 border-b border-gray-300">
+                    <div class="flex items-center">
+                        <label for="shows" class="mr-2 text-sm font-semibold">Shows</label>
+                        <select id="shows" name="shows" class="custom-select border rounded px-2 py-1 text-sm bg-white">
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center">
+                        <label for="search" class="mr-2 text-sm font-semibold">Search</label>
+                        <input type="text" id="search" name="search" class="border rounded px-2 py-1 text-sm">
+                    </div>
+                </div>
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="bg-gray-100 border-b border-gray-300">
+                            <th class="px-4 py-2 text-left font-semibold">Complaint ID</th>
+                            <th class="px-4 py-2 text-left font-semibold">Type</th>
+                            <th class="px-4 py-2 text-left font-semibold">Description</th>
+                            <th class="px-4 py-2 text-left font-semibold">Location</th>
+                            <th class="px-4 py-2 text-left font-semibold">Timestamp</th>
+                            <th class="px-4 py-2 text-left font-semibold">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200">
+                            <td class="px-4 py-2"><input type="text" value="C001" class="w-full bg-transparent" readonly></td>
+                            <td class="px-4 py-2"><input type="text" value="Coach Cleanliness" class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2"><input type="text" value="The coach was dirty with litter on the floor." class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2"><input type="text" value="Platform 3, Coach A" class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2"><input type="text" value="2024-09-01 10:15 AM" class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2">
+                                <select class="w-full bg-transparent custom-select">
+                                    <option>Pending</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="px-4 py-2"><input type="text" value="C002" class="w-full bg-transparent" readonly></td>
+                            <td class="px-4 py-2"><input type="text" value="Staff Behavior" class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2"><input type="text" value="Staff was rude when asked for assistance." class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2"><input type="text" value="Platform 2, Coach B" class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2"><input type="text" value="2024-09-01 10:30 AM" class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2">
+                                <select class="w-full bg-transparent custom-select">
+                                    <option>In Progress</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200"></tr>
+                            <td class="px-4 py-2"><input type="text" value="C002" class="w-full bg-transparent" readonly></td>
+                            <td class="px-4 py-2"><input type="text" value="Equipment Damage" class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2"><input type="text" value="The air conditioning uint is not working." class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2"><input type="text" value="Platform 1, Coach C" class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2"><input type="text" value="2024-09-01 11:10 AM" class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2">
+                                <select class="w-full bg-transparent custom-select">
+                                    <option>Resolved</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200"></tr>
+                            <td class="px-4 py-2"><input type="text" value="C002" class="w-full bg-transparent" readonly></td>
+                            <td class="px-4 py-2"><input type="text" value="Delay" class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2"><input type="text" value="Train departure was deplayed by 30min without announcedment" class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2"><input type="text" value="Platform 3, Coach A" class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2"><input type="text" value="2024-09-01 10:34 AM" class="w-full bg-transparent"></td>
+                            <td class="px-4 py-2">
+                                <select class="w-full bg-transparent custom-select">
+                                    <option>Escalated</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!-- Repeat for C003, C004, and C005 with appropriate values -->
+                    </tbody>
+                </table>
+            </form>
+       </div>
+    </div>
+   
+</body>
+</html>
